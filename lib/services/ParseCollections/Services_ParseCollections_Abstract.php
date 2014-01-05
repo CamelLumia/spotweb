@@ -61,7 +61,8 @@ abstract class Services_ParseCollections_Abstract {
         $title = preg_replace("/\\b(\\/)?(x264|hdtv|xvid|hd|720p|avchd|bluray|mkvh264aac|1080p|1080i|dutch|repost|basp|" .
                                    "ac3|dts|nederlands|rescan|nl sub|nlsub|pal|ipod|ipad|iphone|psp|mp4|dd5.1|~\\* srt \\*~|" .
                                    "ntsc|bd50|3d|480p|half sbs|half\\-sbs|half ou|dvd5|dvd9|rental|nl|bollywood|divx|x264|" .
-                                   "blu ray|made by berserk|web\\-dl|xbox 360|unrated|remux|aac|bd|mkv|subs|subtitel)\\b/i", "", $title);
+                                   "blu ray|made by berserk|web\\-dl|xbox 360|unrated|remux|aac|bd|mkv|subs|subtitel|" .
+                                   "bd25|dd 5 1)\\b/i", "", $title);
 
         /*
          * Replace empty parenthesis, might be caused by aboves replacement
